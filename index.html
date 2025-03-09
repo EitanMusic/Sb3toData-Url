@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SB3 to Data URL Converter</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 50px;
+    }
+    input[type="file"] {
+      margin-bottom: 20px;
+    }
+    textarea {
+      width: 80%;
+      height: 200px;
+      margin-top: 20px;
+      padding: 10px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Convert SB3 File to Data URL</h1>
+
+  <input type="file" id="sb3File" accept=".sb3">
+  <br>
+  <button onclick="convertToDataURL()">Convert to Data URL</button>
+
+  <h2>Resulting Data URL</h2>
+  <textarea id="dataURL" readonly></textarea>
+
+  <!-- New download button -->
+  <button id="downloadBtn" style="display: none;" onclick="downloadDataURL()">Download Data URL</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
